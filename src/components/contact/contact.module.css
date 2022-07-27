@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  gap: 8px;
+  padding: 18px 16px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contentHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentMessage {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  width: 100%;
+}
+
+.contactName {
+  font: var(--body-16regular);
+  color: var(--black);
+}
+
+.messageDate {
+  font: var(--caption-12regular);
+  color: var(--grey);
+}
+
+.message {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.messageContent {
+  display: table-cell;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font: var(--body-16regular);
+  color: var(--grey);
+}
+
+.sendIcon {
+  display: block;
+  min-width: 16px;
+  height: 10px;
+  background-image: url("/src/assets/send.png");
+}

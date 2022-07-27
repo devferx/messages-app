@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  grid-template-columns: 429px 1fr;
+}
+
+.aside {
+  max-height: 100vh;
+  overflow: auto;
+}

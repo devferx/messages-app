@@ -33,6 +33,7 @@ module.exports = {
   plugins: ["simple-import-sort", "prettier"],
   rules: {
     "prettier/prettier": ["error", {}, { usePrettierrc: true }],
+    "no-unused-vars": "off",
     "react/react-in-jsx-scope": "off",
     "jsx-a11y/accessible-emoji": "off",
     "react/prop-types": "off",
