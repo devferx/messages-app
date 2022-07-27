@@ -1,4 +1,5 @@
-.contacts {
+.container {
+  height: calc(100vh - 80px);
   list-style: none;
   overflow-y: auto;
 }

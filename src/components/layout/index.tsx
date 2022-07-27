@@ -1,4 +1,5 @@
 import { contacts } from "../../data";
+import { AsideHeader } from "../aside-header";
 import { Contact } from "../contact";
 import { ContactList } from "../contact-list";
 import styles from "./layout.module.css";
@@ -6,7 +7,9 @@ import styles from "./layout.module.css";
 export const Layout = () => {
   return (
     <main className={styles.container}>
-      <aside className={styles.aside}>
+      <aside>
+        <AsideHeader />
+
         <ContactList
           contacts={contacts}
           renderItem={(contact) => (
