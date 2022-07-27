@@ -2,6 +2,7 @@ import { contacts } from "../../data";
 import { AsideHeader } from "../aside-header";
 import { Contact } from "../contact";
 import { ContactList } from "../contact-list";
+import { ContactSearch } from "../contact-search";
 import styles from "./layout.module.css";
 
 export const Layout = () => {
@@ -9,7 +10,7 @@ export const Layout = () => {
     <main className={styles.container}>
       <aside>
         <AsideHeader />
-
+        <ContactSearch />
         <ContactList
           contacts={contacts}
           renderItem={(contact) => (
