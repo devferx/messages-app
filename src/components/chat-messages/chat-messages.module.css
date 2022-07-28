@@ -1,0 +1,6 @@
+.container {
+  position: relative;
+  height: calc(100vh - 160px);
+  overflow: auto;
+  background-image: url("../../assets/chat-bg.png");
+}

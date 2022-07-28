@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { getContacts } from "../../api";
 import { Contact as ContactI } from "../../interfaces";
 import { AsideHeader } from "../aside-header";
+import { Chat } from "../chat";
 import { Contact } from "../contact";
 import { ContactList } from "../contact-list";
 import { ContactSearch } from "../contact-search";
@@ -27,7 +28,9 @@ export const Layout = () => {
           )}
         />
       </aside>
-      <section>Chat</section>
+      <section>
+        <Chat />
+      </section>
     </main>
   );
 };
