@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.message {
+  display: flex;
+  position: relative;
+  width: max-content;
+  max-width: 80%;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.userMessage {
+  background-color: var(--green-1);
+  border-top-right-radius: 0px;
+  margin-right: 27px;
+}
+
+.contactMessage {
+  margin-right: 30%;
+  background-color: var(--white);
+  border-top-left-radius: 0px;
+  margin-left: 27px;
+}
+
+.userMessage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid var(--green-1);
+}
+
+.contactMessage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid var(--white);
+}
+
+.messageText {
+  font: var(--body-16regular);
+  color: var(--black);
+}
+
+.date {
+  font: var(--caption-12regular);
+  color: var(--grey);
+  text-align: right;
+}
+
+.messageInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
