@@ -5,3 +5,12 @@ export interface Contact {
   lastMessage: string;
   lastMessageDate: string;
 }
+
+export interface Message {
+  id: string;
+  to: string;
+  from: string;
+  date: Date;
+  data: string;
+  viewed: boolean;
+}

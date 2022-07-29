@@ -1,7 +1,11 @@
+import { useContext } from "react";
+
+import { MessagesContext } from "../../context/messages-context";
 import { Message } from "../message";
 import styles from "./chat-messages.module.css";
 
 export const ChatMessages = () => {
+  const { messages } = useContext(MessagesContext);
   return (
     <div className={styles.container}>
       <Message
@@ -24,6 +28,9 @@ export const ChatMessages = () => {
           viewed: true,
         }}
       />
+      {messages.map((message) => (
+        <Message key={message.id} message={message} />
+      ))}
     </div>
   );
 };

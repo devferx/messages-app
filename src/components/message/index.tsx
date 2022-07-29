@@ -1,16 +1,8 @@
 import sendIcon from "../../assets/send.png";
 import viewedIcon from "../../assets/viewed.png";
+import { Message as MessageI } from "../../interfaces";
 import { getHourMinutes } from "../../utils/date";
 import styles from "./message.module.css";
-
-interface MessageI {
-  id: string;
-  to: string;
-  from: string;
-  date: Date;
-  data: string;
-  viewed: boolean;
-}
 
 interface MessageProps {
   message: MessageI;
